@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>subexplorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>subexplorer</h1>
+    <span id="status" class="status">connexion…</span>
+  </header>
+  <main>
+    <aside id="sidebar">
+      <section>
+        <h2>Bases</h2>
+        <ul id="databases"></ul>
+      </section>
+      <section>
+        <h2 id="tables-title">Tables</h2>
+        <ul id="tables"></ul>
+      </section>
+    </aside>
+    <section id="content">
+      <div id="placeholder" class="placeholder">Sélectionne une table…</div>
+      <div id="table-view" hidden>
+        <h2 id="table-name"></h2>
+        <div class="meta">
+          <label>Limite <input id="limit" type="number" min="1" max="500" value="50"></label>
+          <button id="reload">Recharger</button>
+          <span id="count"></span>
+        </div>
+        <details open>
+          <summary>Colonnes</summary>
+          <div id="columns" class="columns"></div>
+        </details>
+        <div class="grid-wrap">
+          <table id="rows"></table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
