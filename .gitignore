@@ -1,0 +1,19 @@
+# Secrets / configuration locale
+.env
+.env.*
+*.local
+*.secret
+*.pem
+*.key
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Éditeurs
+.vscode/
+.idea/
